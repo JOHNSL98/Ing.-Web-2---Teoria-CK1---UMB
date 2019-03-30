@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="css/calculadora.css"" />
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <div id="container">
+            <h1>Calculadora</h1>
+            <div id="calculator">
+                <form>
+                    <p>Cual es el valor de tu factura?
+                    <p>
+                    $<input id="billamt" type="text" placeholder="Total de la factura">
+                    <p>Como fue tu servicio?
+                    <p>
+                    <select id="serviceQual">
+                        <option disabled selected value="0">-- Escoja una opcion --</option>
+                        <option value="0.3">30&#37; &#45; Excepcional</option>
+                        <option value="0.2">20&#37; &#45; Bueno</option>
+                        <option value="0.15">15&#37; &#45; Normal</option>
+                        <option value="0.1">10&#37; &#45; Malo</option>
+                        <option value="0.05">5&#37; &#45; Terrible</option>
+                    </select>
+                </form>
+                <p>¿Cuántas personas están compartiendo la cuenta?</p>
+                <input id="peopleamt" type="text" placeholder="Numero de personas"> personas
+                <button type="button" id="calculate">Calcular!</button>
+            </div>
+            <!--calculator end-->
+            <div id="totalTip">
+                <sup>$</sup><span id="tip">0.00</span>
+                <small id="each">each</small>
+            </div>
+            <!--totalTip end-->
+        </div>
+        <!--container end-->
+        <script src="./js/calculadora.js"></script>
+    </body>
+</html>
